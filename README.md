@@ -29,17 +29,7 @@ docker build -t my-ksysguard .
 ```
 
 ## Usage
-To run the Docker container:
-
-```bash
-docker run --rm -it --privileged --pid=host \
-    -e DISPLAY=$DISPLAY \
-    -v /tmp/.X11-unix:/tmp/.X11-unix \
-    -v /usr/share/icons:/usr/share/icons:ro \
-    -v /usr/share/themes:/usr/share/themes:ro \
-    -v $HOME/.config/KDE:/home/user/.config/KDE:ro \
-    my-ksysguard
-```
+To run the Docker container, use start.sh
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request.
